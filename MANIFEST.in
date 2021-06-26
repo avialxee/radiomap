@@ -1,3 +1,0 @@
-include *.in
-include *.rst
-recursive-include src *.py

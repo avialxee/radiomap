@@ -100,3 +100,7 @@ def vzc_dict(svy):
         return columns.keys()
     else:
         return "'{}' is not a valid survey. please choose one from {} or use any of '*' 'v' 'k' ".format(svy, columns.keys())
+
+
+def cli():
+    pass

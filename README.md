@@ -1,5 +1,5 @@
-# rgbmaker
-A python package which communicates to different astronomical services and fetches fits and numerical data.
+# radiomap
+A python package which has radio astronomy calculation tools including spectral index map calculation.
 
 # Developement
 ```bash
@@ -8,12 +8,12 @@ $ pip install -e .[dev]
 
 # Installation:
 ```bash
-$ pip install rgbmaker
+$ pip install radiomap
 ```
 
 # Usage
 ```bash
-$ from rgbmaker.fetch import query
-$ result = query(name='Avi', position='3C 33.1', radius=0.12, kind='jpg')
+$ from radiomap import spectral_index as si
+$ result = si(tgss = tgss_arr_data, nvss=nvss_arr_data)
 $ print(result)
 ```
