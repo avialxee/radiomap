@@ -1,6 +1,6 @@
 #-- author: @avialxee ---#--#
 #from radmap import rad_helpers
-from _helpers import vz_query
+from ._helpers import vz_query
 import numpy as np
 
 
