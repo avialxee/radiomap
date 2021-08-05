@@ -1,6 +1,6 @@
 #-- author: @avialxee ---#--#
 #from radmap import rad_helpers
-from ._helpers import vz_query
+from _helpers import vz_query
 import numpy as np
 
 
@@ -50,12 +50,17 @@ class RadioMap:
         return tgss, nvss, dim
 
 
-#tgss = [[1, 12, 3], [2, 22, 32]]
-#nvss = [[12, 2, 13], [12, 2, 0.2]]
+tgss = [[1, 12, 0.003], [2, 22, 32]]
+nvss = [[12, 2, 13], [12, 2, 0.2]]
 #tgss = np.array(tgss)
-#ins = RadioMap()
+ins = RadioMap()
 #
 #print(tgss)
 #print(nvss)
-#print(ins.spectral_index(tgss, nvss))
+
+ind = np.where(np.array(tgss) < 0.015)
+
+tgss[ind] =0.0
+print(ins.spectral_index(tgss, nvss))
+
 #print(ins.throw_output())

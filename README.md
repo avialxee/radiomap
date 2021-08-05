@@ -1,5 +1,6 @@
 # radiomap
 A python package which has radio astronomy calculation tools including spectral index map calculation.
+> In-progress : will update with new update on 15 august
 
 # Developement
 ```bash
